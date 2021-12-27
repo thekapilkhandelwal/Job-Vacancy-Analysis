@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<h1>GRAPH 2 !!!!!!!!!!!!!</h1>
+<div id="my_dataviz"></div>
+<div id="legend"></div> 
+<script>
+
+    // set the dimensions and margins of the graph
+    var margin = {top: 10, right: 30, bottom: 30, left: 100},
+        width = 1300 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+    
+    // append the svg object to the body of the page
+    var svg = d3.select("#my_dataviz")
+      .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+        .attr("transform",
+              "translate(" + margin.left + "," + margin.top + ")");
+    
+    // Parse the Data
+    d3.csv("public-transport-utilisation-average-public-transport-ridership.csv", function(data) {
+    
+      // List of subgroups = header of the csv files = soil condition here
+      var subgroups = d3.map(data, function(d){return(d.type_of_public_transport)}).keys()
+    // console.log(subgroups);
+
+// List of groups = species here = value of the first column called group -> I show them on the X axis
+var groups = d3.map(data, function(d){return(d.year)}).keys()
+//  console.log(groups);
+
+// Add X axis
+var x = d3.scaleBand()
+    .domain(groups)
+    .range([0, width])
+    .padding([0.2])
+svg.append("g")
+  .attr("transform", "translate(0," + height + ")")
+  .call(d3.axisBottom(x).tickSize(0));
+
+svg.append("text")             
+      .attr("transform",
+            "translate(" + (width/2) + " ," + 
+                           (height + margin.top + 15) + ")")
+      .style("text-anchor", "middle")
+      .text("Year");
+
+// Add Y axis
+var y = d3.scaleLinear()
+  .domain([0, 3500000])
+  .range([ height, 0 ]);
+svg.append("g")
+  .call(d3.axisLeft(y));   
+  
+svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left + 20)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+    //   .style("font-type",'bold')
+      .text("Average_ridership"); 
+
+// Another scale for subgroup position?
+var xSubgroup = d3.scaleBand()
+    .domain(subgroups)
+    .range([0, x.bandwidth()])
+    .padding([0.2])
+
+  // color palette = one color per subgroup
+  var color = d3.scaleOrdinal(['#377eb8','yellow','#e03838','#2ba624'])
+
+     // Show the bars
+  svg.append("g")
+    .selectAll("g")
+    // Enter in data = loop group per group
+    .data(data)
+    .enter()
+    .append("g")
+      .attr("transform", function(d) { return "translate(" + x(d.year) + ",0)"; })
+    .selectAll("rect")
+    .data(function(d) { return subgroups.map(function(key) { 
+        // console.log(d);
+        return {key: d.type_of_public_transport, value: d.average_ridership}; }); })
+    .enter().append("rect")
+      .attr("x", function(d) { 
+        // console.log(xSubgroup(d.key))  
+        return xSubgroup(d.key); })
+      .attr("y", function(d) { 
+        // console.log(d)  
+        return y(d.value); })
+      .attr("width", xSubgroup.bandwidth())
+      .attr("height", function(d) { return height - y(d.value); })
+      .attr("fill", function(d) { return color(d.key); });
+
+})
+var svg2 = d3.select("#legend").append("svg")
+
+svg2.append("circle").attr("cx",80).attr("cy",40).attr("r", 6).style("fill", "#377eb8")
+svg2.append("circle").attr("cx",80).attr("cy",60).attr("r", 6).style("fill", "#ede73e")
+svg2.append("circle").attr("cx",80).attr("cy",80).attr("r", 6).style("fill", "#e41a1c")
+svg2.append("circle").attr("cx",80).attr("cy",100).attr("r", 6).style("fill", "#4daf4a")
+svg2.append("text").attr("x", 100).attr("y", 40).text("MRT").style("font-size", "15px").attr("alignment-baseline","middle")
+svg2.append("text").attr("x", 100).attr("y", 60).text("LRT").style("font-size", "15px").attr("alignment-baseline","middle")
+svg2.append("text").attr("x", 100).attr("y", 80).text("Bus").style("font-size", "15px").attr("alignment-baseline","middle")
+svg2.append("text").attr("x", 100).attr("y", 100).text("Taxi").style("font-size", "15px").attr("alignment-baseline","middle")
+</script>
