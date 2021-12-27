@@ -1,94 +1,94 @@
 year,occupation1,job_vacancy_rate
-1990,"professional, managers, executive and technicians",4.3
-1990,"clerical, sales and services workers",6.1
-1990,"production and transport operators, cleaners and labourers",7
-1991,"professional, managers, executive and technicians",3.5
-1991,"clerical, sales and services workers",5.5
-1991,"production and transport operators, cleaners and labourers",5.8
-1992,"professional, managers, executive and technicians",3.4
-1992,"clerical, sales and services workers",5.3
-1992,"production and transport operators, cleaners and labourers",5.6
-1993,"professional, managers, executive and technicians",3.5
-1993,"clerical, sales and services workers",5.4
-1993,"production and transport operators, cleaners and labourers",5
-1994,"professional, managers, executive and technicians",3.8
-1994,"clerical, sales and services workers",6.1
-1994,"production and transport operators, cleaners and labourers",5.4
-1995,"professional, managers, executive and technicians",4.1
-1995,"clerical, sales and services workers",5.9
-1995,"production and transport operators, cleaners and labourers",5.3
-1996,"professional, managers, executive and technicians",3.9
-1996,"clerical, sales and services workers",5.7
-1996,"production and transport operators, cleaners and labourers",4.7
-1997,"professional, managers, executive and technicians",3.9
-1997,"clerical, sales and services workers",5.1
-1997,"production and transport operators, cleaners and labourers",4.1
-1998,"professional, managers, executive and technicians",1.8
-1998,"clerical, sales and services workers",2.4
-1998,"production and transport operators, cleaners and labourers",1.6
-1999,"professional, managers, executive and technicians",2.5
-1999,"clerical, sales and services workers",2.5
-1999,"production and transport operators, cleaners and labourers",1.7
-2000,"professional, managers, executive and technicians",3.2
-2000,"clerical, sales and services workers",3.1
-2000,"production and transport operators, cleaners and labourers",2.2
-2001,"professional, managers, executive and technicians",1.8
-2001,"clerical, sales and services workers",1.8
-2001,"production and transport operators, cleaners and labourers",1.2
-2002,"professional, managers, executive and technicians",1.4
-2002,"clerical, sales and services workers",1.6
-2002,"production and transport operators, cleaners and labourers",1.5
-2003,"professional, managers, executive and technicians",1.1
-2003,"clerical, sales and services workers",1.3
-2003,"production and transport operators, cleaners and labourers",1.2
-2004,"professional, managers, executive and technicians",1.5
-2004,"clerical, sales and services workers",1.7
-2004,"production and transport operators, cleaners and labourers",1.5
-2005,"professional, managers, executive and technicians",1.8
-2005,"clerical, sales and services workers",2
-2005,"production and transport operators, cleaners and labourers",1.4
-2006,"professional, managers, executive and technicians",2.6
-2006,"clerical, sales and services workers",2.6
-2006,"production and transport operators, cleaners and labourers",1.9
-2007,"professional, managers, executive and technicians",3
-2007,"clerical, sales and services workers",3
-2007,"production and transport operators, cleaners and labourers",2
-2008,"professional, managers, executive and technicians",2.8
-2008,"clerical, sales and services workers",2.8
-2008,"production and transport operators, cleaners and labourers",1.6
-2009,"professional, managers, executive and technicians",2.3
-2009,"clerical, sales and services workers",2.1
-2009,"production and transport operators, cleaners and labourers",1.2
-2010,"professional, managers, executive and technicians",2.9
-2010,"clerical, sales and services workers",3
-2010,"production and transport operators, cleaners and labourers",1.9
-2011,"professional, managers, executive and technicians",3
-2011,"clerical, sales and services workers",3.6
-2011,"production and transport operators, cleaners and labourers",2.3
-2012,"professional, managers, executive and technicians",2.5
-2012,"clerical, sales and services workers",3.4
-2012,"production and transport operators, cleaners and labourers",1.9
-2013,"professional, managers, executive and technicians",2.7
-2013,"clerical, sales and services workers",3.8
-2013,"production and transport operators, cleaners and labourers",2.2
-2014,"professional, managers, executive and technicians",3
-2014,"clerical, sales and services workers",4.3
-2014,"production and transport operators, cleaners and labourers",2.3
-2015,"professional, managers, executive and technicians",2.9
-2015,"clerical, sales and services workers",3.9
-2015,"production and transport operators, cleaners and labourers",1.9
-2016,"professional, managers, executive and technicians",2.5
-2016,"clerical, sales and services workers",3.2
-2016,"production and transport operators, cleaners and labourers",1.6
-2017,"professional, managers, executive and technicians",2.6
-2017,"clerical, sales and services workers",3
-2017,"production and transport operators, cleaners and labourers",1.7
-2018,"professional, managers, executive and technicians",3
-2018,"clerical, sales and services workers",3.2
-2018,"production and transport operators, cleaners and labourers",2
-2019,"professional, managers, executive and technicians",2.8
-2019,"clerical, sales and services workers",2.8
-2019,"production and transport operators, cleaners and labourers",1.6
-2020,"professional, managers, executive and technicians",2.6
-2020,"clerical, sales and services workers",2.5
-2020,"production and transport operators, cleaners and labourers",1.8
+1990,pmet,4.3
+1990,cssw,6.1
+1990,ptcl,7
+1991,pmet,3.5
+1991,cssw,5.5
+1991,ptcl,5.8
+1992,pmet,3.4
+1992,cssw,5.3
+1992,ptcl,5.6
+1993,pmet,3.5
+1993,cssw,5.4
+1993,ptcl,5
+1994,pmet,3.8
+1994,cssw,6.1
+1994,ptcl,5.4
+1995,pmet,4.1
+1995,cssw,5.9
+1995,ptcl,5.3
+1996,pmet,3.9
+1996,cssw,5.7
+1996,ptcl,4.7
+1997,pmet,3.9
+1997,cssw,5.1
+1997,ptcl,4.1
+1998,pmet,1.8
+1998,cssw,2.4
+1998,ptcl,1.6
+1999,pmet,2.5
+1999,cssw,2.5
+1999,ptcl,1.7
+2000,pmet,3.2
+2000,cssw,3.1
+2000,ptcl,2.2
+2001,pmet,1.8
+2001,cssw,1.8
+2001,ptcl,1.2
+2002,pmet,1.4
+2002,cssw,1.6
+2002,ptcl,1.5
+2003,pmet,1.1
+2003,cssw,1.3
+2003,ptcl,1.2
+2004,pmet,1.5
+2004,cssw,1.7
+2004,ptcl,1.5
+2005,pmet,1.8
+2005,cssw,2
+2005,ptcl,1.4
+2006,pmet,2.6
+2006,cssw,2.6
+2006,ptcl,1.9
+2007,pmet,3
+2007,cssw,3
+2007,ptcl,2
+2008,pmet,2.8
+2008,cssw,2.8
+2008,ptcl,1.6
+2009,pmet,2.3
+2009,cssw,2.1
+2009,ptcl,1.2
+2010,pmet,2.9
+2010,cssw,3
+2010,ptcl,1.9
+2011,pmet,3
+2011,cssw,3.6
+2011,ptcl,2.3
+2012,pmet,2.5
+2012,cssw,3.4
+2012,ptcl,1.9
+2013,pmet,2.7
+2013,cssw,3.8
+2013,ptcl,2.2
+2014,pmet,3
+2014,cssw,4.3
+2014,ptcl,2.3
+2015,pmet,2.9
+2015,cssw,3.9
+2015,ptcl,1.9
+2016,pmet,2.5
+2016,cssw,3.2
+2016,ptcl,1.6
+2017,pmet,2.6
+2017,cssw,3
+2017,ptcl,1.7
+2018,pmet,3
+2018,cssw,3.2
+2018,ptcl,2
+2019,pmet,2.8
+2019,cssw,2.8
+2019,ptcl,1.6
+2020,pmet,2.6
+2020,cssw,2.5
+2020,ptcl,1.8
