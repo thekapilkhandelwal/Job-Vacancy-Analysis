@@ -25,7 +25,7 @@
               "translate(" + margin.left + "," + margin.top + ")");
     
     // Parse the Data
-    d3.csv("job-vacancy-rate-by-broad-occupational-group.csv", function(data) {
+    d3.csv("https://raw.githubusercontent.com/thekapilkhandelwal/sauravkukreja.github.io/main/job-vacancy-rate-by-broad-occupational-group.csv", function(data) {
     
       // List of subgroups = header of the csv files = soil condition here
       var subgroups = d3.map(data, function(d){return(d.occupation1)}).keys()
